@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Kubo Financiero</title>
+    <meta charset="UTF-8">
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="col-md-7 col-md-offset">
+      <div class="col-md-3">
+	<img src="./images/liac.png"> 
+      </div>
+      <div class="col-md-9">
+	<br>
+	<br>
+	<h1>Kubo Financiero<small> Análisis exploratorio</small></h1>
+      </div>
+      <div class="col-md-12">
+	<h2 style="background-color:#004D40;color:#FAFAFA">Contenido</h2>
+	<ol>
+	  <li>Análisis general poblacional
+	    <ol>
+	      <li>Distribución de características generales de la población</li>
+	      <li>Distribución de características historial crediticio</li>
+	      <li>Distribución de características tipo de préstamos</li>
+	      <li>Distribución deudores</li>
+	    </ol>
+	  </li>
+	  <li>Análisis de correlación entre variables
+	    <ol>
+	      <li>Correlación entre características generales y deudores</li>
+	      <li>Correlación entre características préstamos y deudores</li>
+	    </ol>
+	  </li>
+	  <li>Resultados
+	    <ol>
+	      <li>Discusión</li>
+	      <li>Conclusión</li>
+	    </ol>
+	  </li>
+	</ol>
+      </div>
+      <div class="col-md-12">
+	<h2 style="sbackground-color:#004D40;color:#FAFAFA">Análisis general poblacional</h2>
+	<p>En esta sección exploramos las características de la población en general. Al analizar variables tales como sexo, nivel de escolaridad, estado civil, edad, etc. podremos hacer un perfíl del cliente promedio de <b>Kubo Financiero</b>.</p> Las librerías utilizadas en esta sección son las siguientes:
+	<br>
+	<div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+	  <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-style: italic">#------------------------------------------------------------</span>
+                                        <span style="color: #008800; font-style: italic"># Librerías utilizadas</span>
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(stringr)
+library(Hmisc)
+	</pre></div>
+	<br>
+	<p>Leemos los datos y comenzamos el proceso de exploración</p>
+	<br>
+	<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #008800; font-style: italic">#------------------------------------------------------------</span>
+                                        <span style="color: #008800; font-style: italic"># Lectura de datos</span>
+input.data <span style="color: #666666">&lt;-</span> read.csv(<span style="color: #BB4444">&quot;../../Datos/tuberias.csv&quot;</span>,
+                       stringsAsFactors <span style="color: #666666">=</span> <span style="color: #AA22FF; font-weight: bold">FALSE</span>)
+                                       
+</pre></div>
+      </div>
+    </div>
+    <div class="col-md-5 col-md-offset">
+    </div>
+  </body>
+</html>
