@@ -31,15 +31,20 @@ hist.pob.estudios <-
     ggplot(data = input.data,
            aes(x = quint.edad, fill = nivel_estudios)) +
         geom_histogram(position = "dodge") +
-            facet_wrap(~sexo)
+            facet_wrap(~sexo) + xlab("Quintiles edad") + ylab("Observaciones")
+png("../presentation/images/hist_pob_estudios.png",width=850,height=600)
 hist.pob.estudios
+dev.off()
                                         # Histograma de clientes por edad, sexo, estado civil.
 hist.pob.civil <-
     ggplot(data = input.data,
            aes(x = quint.edad, fill = estado_civil)) +
         geom_histogram(position ="dodge") +
-            facet_wrap(~sexo)
+            facet_wrap(~sexo) + xlab("Quintiles edad") + ylab("Observaciones")
 hist.pob.civil
+png("../presentation/images/hist_pob_civil.png",width=850,height=600)
+hist.pob.civil
+dev.off()
                                         # Distribución de clientes actividad laboral
 plyr::count(input.data$es_comerciante)
 plyr::count(input.data$es_empleado)

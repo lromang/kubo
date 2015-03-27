@@ -96,7 +96,9 @@ input.data <span style="color: #666666">&lt;-</span> read.csv(<span style="color
       <div class="col-md-12">
       <p style="text-align:justify">Algo que llama la atención es el porcentaje de inidividuos con estudios superiores (muy disitinto al promedio poblacional mexicano). Esto nos da un indicio de que los clientes de <b>Kubo Financiero</b> son en general gente mejor preparada (en el sentido académico) que el promedio poblacional. En cuanto al resto de las variables se ve una distribución muy parecida a la nacional.</p>  
     </div>
-    <br>
+      <br>
+      <h3>Distribución características crediticias</h3>
+      <p style="text-align:justify">El objetivo de esta sección es identificar si exsite algún patrón en la distribución de las características crediticias de los clientes de <b>Kubo Financiero</b></p>
     </div>
     <div class="col-md-5 col-md-offset">
     </div>
